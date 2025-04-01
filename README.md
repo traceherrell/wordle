@@ -1,12 +1,24 @@
-# React + Vite
+# Wordle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based version of the popular word-guessing game Wordle.
 
-Currently, two official plugins are available:
+## How to Play
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. The goal is to guess a 5-letter word in 6 attempts or fewer.
+2. Type a 5-letter word and press Enter to submit your guess.
+3. After each guess, the color of the tiles will change:
+   - Green: The letter is correct and in the right position.
+   - Yellow: The letter is in the word but in the wrong position.
+   - Gray: The letter is not in the word.
+4. Use the information from your previous guesses to help figure out the word.
+5. You win when all letters are in the correct position (all green).
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
