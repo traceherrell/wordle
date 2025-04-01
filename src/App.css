@@ -1,0 +1,42 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Hide header and message area on mobile devices */
+@media screen and (max-width: 768px) {
+  .App-header, .message-area {
+    display: none;
+  }
+}
+
+.play-again-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #6aaa64;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
